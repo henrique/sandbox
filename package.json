@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.coffee",
   "scripts": {
-    "start": "node_modules/.bin/coffee src/index.coffee",
-    "test": "node_modules/.bin/mocha test/unit/**",
+    "start": "node_modules/.bin/coffee index.coffee",
+    "test": "node_modules/.bin/mocha ",
     "cov": "node_modules/.bin/_mocha --require coffee-coverage/register --compilers coffee:coffee-script/register -R html-cov --bail test/unit/** > coverage.html",
     "acceptance": "./scenarios -dir 'test/acceptance' -runner 'node_modules/.bin/mocha' -replayCommand './replay'"
   },
